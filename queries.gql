@@ -1,0 +1,149 @@
+{
+  allContentfulContentType {
+    edges {
+      node {
+        node_locale
+        id
+        name
+				description
+        enabled
+        series {
+          id
+          enabled
+          name
+          order
+          slug
+          metadata
+          tags {
+            id
+            label
+            slug
+            enabled
+          }
+          type {
+            id
+            name
+            description
+            enabled
+            node_locale
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+{
+  allContentfulSeries {
+    edges {
+      node {
+        node_locale
+        id
+        enabled
+        name
+        order
+        slug
+        metadata
+        tags {
+          id
+          label
+          slug
+          enabled
+          series {
+            id
+            enabled
+            name
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+{
+  allContentfulTag {
+    edges {
+      node {
+        node_locale
+        id
+        label
+        slug
+        enabled
+        series {
+          id
+          name
+          order
+          slug
+          metadata
+          tags {
+            id
+            label
+            slug
+            enabled
+          }
+          type {
+            id
+            name
+            displayField
+            description
+            type
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+{
+  allContentfulPage {
+    edges {
+      node {
+        id
+        enabled
+        order
+        slug
+        title
+        metadata
+        type {
+          id
+          name
+          description
+          enabled
+          series {
+            id
+            name
+          }
+        }
+        serie {
+          id
+        }
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "errors": [
+    {
+      "message": "Cannot query field \"allContentfulAsset\" on type \"RootQueryType\". Did you mean \"allContentfulPage\", \"allContentfulTag\", \"allContentfulSeries\", \"contentfulPage\", or \"allContentfulContentType\"?",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ]
+    }
+  ]
+}

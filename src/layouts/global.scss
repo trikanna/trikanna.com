@@ -27,24 +27,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   overflow-y: scroll;
-  /**/
-  background-image: -webkit-linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
-  background-image: -moz-linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
-  background-image: linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
-  /**/
-  background-image: -webkit-linear-gradient(-20deg, #eee 0%, white 100%);
-  background-image: -moz-linear-gradient(-20deg, #eee 0%, white 100%);
-  background-image: linear-gradient(-20deg, #eee 0%, white 100%);
   /*
   background-image: -webkit-linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
   background-image: -moz-linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
   background-image: linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
-  */
+
+  background-image: -webkit-linear-gradient(-20deg, #eee 0%, white 100%);
+  background-image: -moz-linear-gradient(-20deg, #eee 0%, white 100%);
+  background-image: linear-gradient(-20deg, #eee 0%, white 100%);
+
+  background-image: -webkit-linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
+  background-image: -moz-linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
+  background-image: linear-gradient(20deg, #2e3192 0%, #ed1e79 100%);
+
   background-blend-mode: none;
   filter: none;
   -webkit-filter: none;
   background-size: initial;
   background-repeat: initial;
+  */
 }
 
 .debug {
