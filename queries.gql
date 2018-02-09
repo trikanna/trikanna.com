@@ -1,4 +1,26 @@
 {
+  allContentfulSeriesDescriptionTextNode {
+    edges {
+      node {
+        id
+        description
+      }
+    }
+  },
+
+  allContentfulPageBodyTextNode {
+    edges {
+      node {
+        id
+        body
+      }
+    }
+  }
+
+}
+
+
+{
   allContentfulContentType {
     edges {
       node {
