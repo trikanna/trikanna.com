@@ -14,6 +14,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `0rty5kbmjpkq`,
+        accessToken: `7854445c612776c3015327ea11ccadad4fdb805a9bd4e755ab86aeddb9d683d7`
+      }
+    },
+    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: './src/favicon.png',
@@ -29,6 +36,18 @@ module.exports = {
           yandex: true,
           windows: true
         }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+        mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        generateMatchPathRewrites: true // boolean to turn off automatic creation of redirect rules for client only paths
       }
     },
     {
